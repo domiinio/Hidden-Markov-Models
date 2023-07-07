@@ -15,6 +15,13 @@ probabilities with Vitterbi for better numerical stability. Finally, we have imp
 
 To validate the performance of implemented algorithms we used the Manhattan distance of the estimated and real positions as well as a simple hit/miss metric.
 
+## Repository Structure
+
+  - `code` folder contains Python scripts that solve the afore-described task. It also contains `Matlab` script that creates some of the plots used to visualise the results.
+  - `figs` folder contains figures used either in this README or in the report
+  - `mazes` folder contains files that describe used environments/maps where the robot was moving.
+  - `report` folder contains a pdf report presenting the work done and detailing the implemented algorithms and results.
+
 ## Documentation
 Detailed documentation and description of the implemented algorithms and solution are in the pdf report that can be found in the `report` folder accessible from the root of this repository. 
 
