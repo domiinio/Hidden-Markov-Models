@@ -5,6 +5,11 @@ This repository contains work solving the problem of estimating robot's position
 In this repository, I present the solution to a second semestral project in the [Artificial Intelligence](https://moodle.fel.cvut.cz/local/kos/pages/course/info.php?code=B3M33UI&semester=B162) course, at CTU.
 The goal of this project was to use Hidden Markov Models to estimate position of a mobile robot that moves in a maze. I did this project together with Tomáš Rutrle and here I present our joint results.
 
+![Example setting of a robot's position in a map](figs/maze.png)
+
+In the figure above, there is a visualisation of the problem setting. We try to localise the robot (yellow dot) in a map and guess on which tile it currently is, given an uncertain transition model and the 
+sequence of commands.
+
 We used a couple of HMM-based prediction algorithms, namely *filtering*, *smoothing*, and the *Vitterbi* algorithm. We also compared different implementations of mentioned algorithms, such as using log 
 probabilities with Vitterbi for better numerical stability. Finally, we have implemented the *Baum-Welch* algorithm for estimating HMM parameters.
 
@@ -15,3 +20,9 @@ Detailed documentation and description of the implemented algorithms and solutio
 
 ## Results
 Here, I visualise some of the key achieved results. Description, discussion and comments on the visualised figures can be found in the report. 
+
+### Hit Rate
+![Comparison of hit rates of individual algorithms](figs/hit_rate_cmp.png)
+
+### Error of the Position Estimator
+![Comparison of the position error](figs/error_cmp.png)
